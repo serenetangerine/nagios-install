@@ -91,5 +91,5 @@ systemctl start httpd
 
 
 ## configure firewall to allow port 80 traffic for web ui
-firewall-cmd --add-serice=http --permanent
+firewall-cmd --add-service=http --permanent
 firewall-cmd --reload
