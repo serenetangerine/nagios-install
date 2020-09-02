@@ -22,8 +22,8 @@ usermod -G nagcmd apache
 
 ## download nagios core 4.4.5 and nagios plugin 2.2.1
 # create directory for nagios installation
-mkdir /root/nagios
-cd /root/nagios
+mkdir /tmp/nagios
+cd /tmp/nagios
 
 # download nagios
 wget https://assets.nagios.com/downloads/nagioscore/releases/nagios-4.4.5.tar.gz
@@ -32,7 +32,7 @@ wget https://nagios-plugins.org/download/nagios-plugins-2.2.1.tar.gz
 # extract nagios core and plugins
 tar -xvf nagios-4.4.5.tar.gz
 tar -xvf nagios-plugins-2.2.1.tar.gz
-
+rm *.tar.gz
 
 ## configure nagios core
 cd nagios-4.4.5/
