@@ -24,3 +24,7 @@ rpm -i libthruk-2.34-0.rhel8.x86_64.rpm
 rpm -i thruk-base-2.34-3.rhel8.x86_64.rpm
 rpm -i thruk-plugin-reporting-2.34-3.rhel8.x86_64.rpm
 rpm -i thruk-2.34-3.rhel8.x86_64.rpm
+
+## set credentials for thrukadmin
+htpasswd -s -c /etc/thruk/htpasswd thrukadmin
+systemctl restart httpd
