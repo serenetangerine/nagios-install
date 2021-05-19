@@ -9,7 +9,7 @@
 
 ## initial work
 # install dependencies
-yum install -y httpd httpd-tools php gcc glibc glibc-common gd gd-devel make net-snmp
+yum install -y httpd httpd-tools php gcc glibc glibc-common gd gd-devel make net-snmp wget
 
 # create nagios user and group
 useradd nagios
