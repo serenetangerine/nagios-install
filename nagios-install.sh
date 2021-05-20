@@ -69,7 +69,7 @@ systemctl start httpd.service
 
 
 ## compile and install nagios plugin
-cd /root/nagios
+cd /tmp/nagios
 cd nagios-plugins-2.2.1/
 ./configure --with-nagios-user=nagios --with-nagios-group=nagios
 make
